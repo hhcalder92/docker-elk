@@ -1,4 +1,4 @@
 docker-elk
 =============
 
-Run Kibana, ElasticSearch, Logstash, and Ngnix in Docker.
+Run Kibana, ElasticSearch, Logstash in Docker/Vagrant.
