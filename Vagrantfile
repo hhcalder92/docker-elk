@@ -45,7 +45,7 @@ tar zxvf kibana-*.tar.gz && \
 rm kibana-*.tar.gz && \
 mv kibana-* kibana
 #Logstash
- wget https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz && \
+ wget https://download.elasticsearch.org/logstash/logstash/logstash-1.4.3.tar.gz && \
 tar zxvf logstash-*.tar.gz && \
 rm logstash-*.tar.gz && \
 mv logstash-* logstash
