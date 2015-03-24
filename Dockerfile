@@ -38,14 +38,14 @@ RUN wget --no-check-certificate https://download.elasticsearch.org/elasticsearch
     elasticsearch/bin/plugin -install mobz/elasticsearch-head
 
 #Kibana
-RUN wget https://download.elasticsearch.org/kibana/kibana/kibana-4.0.1-linux-x64.tar.gz && \
+RUN wget --no-check-certificate https://download.elasticsearch.org/kibana/kibana/kibana-4.0.1-linux-x64.tar.gz && \
     tar xf kibana-*.tar.gz && \
     rm kibana-*.tar.gz && \
     mv kibana-* kibana
 
 
 #Logstash
-RUN wget https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz && \
+RUN wget --no-check-certificate https://download.elasticsearch.org/logstash/logstash/logstash-1.5.0.rc2.tar.gz && \
 	tar xf logstash-*.tar.gz && \
     rm logstash-*.tar.gz && \
     mv logstash-* logstash
