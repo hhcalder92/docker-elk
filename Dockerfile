@@ -31,7 +31,7 @@ RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main' > /
     DEBIAN_FRONTEND=noninteractive apt-get install -y oracle-java7-installer
 
 #ElasticSearch
-RUN wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.5.0.tar.gz && \
+RUN wget --no-check-certificate https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.5.0.tar.gz && \
     tar xf elasticsearch-*.tar.gz && \
     rm elasticsearch-*.tar.gz && \
     mv elasticsearch-* elasticsearch && \
