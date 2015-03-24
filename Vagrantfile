@@ -35,18 +35,18 @@ echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /u
 DEBIAN_FRONTEND=noninteractive apt-get install -y oracle-java7-installer
 #ElasticSearch
  wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.5.0.tar.gz && \
-tar xf elasticsearch-*.tar.gz && \
+tar zxvf elasticsearch-*.tar.gz && \
 rm elasticsearch-*.tar.gz && \
 mv elasticsearch-* elasticsearch && \
 elasticsearch/bin/plugin -install mobz/elasticsearch-head
 #Kibana
  wget https://download.elasticsearch.org/kibana/kibana/kibana-4.0.1-linux-x64.tar.gz && \
-tar xf kibana-*.tar.gz && \
+tar zxvf kibana-*.tar.gz && \
 rm kibana-*.tar.gz && \
 mv kibana-* kibana
 #Logstash
  wget https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz && \
-tar xf logstash-*.tar.gz && \
+tar zxvf logstash-*.tar.gz && \
 rm logstash-*.tar.gz && \
 mv logstash-* logstash
 
